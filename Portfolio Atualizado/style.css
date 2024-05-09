@@ -6,12 +6,12 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(41, 236, 243);
+    background-color: rgb(48, 252, 7);
     
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(41, 236, 243);
+    background-color: rgb(48, 252, 7);
 }
 *{
     margin: 0;
@@ -43,12 +43,13 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 750;
-    background-color: rgb(41, 236, 243);
+    background-color: rgb(48, 252, 7);
     border: 0;
     border-radius: 25px;
     cursor: pointer;
     transition: .4s;
 }
+
 
 h2.titulo{
    color: #fff;
@@ -57,11 +58,11 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: rgb(41, 236, 243);
+    color: rgb(48, 252, 7);
 }
 
 button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px rgb(43, 214, 226);
+    box-shadow: 0px 0px 8px rgb(48, 252, 7);
     transform: scale(1.1);
 
 }
@@ -89,7 +90,7 @@ header a{
 }
 
 header a:hover{
-    color: rgb(43, 214, 226);
+    color: rgb(48, 252, 7);
     transform: scale(1.2);
 }
 
@@ -122,7 +123,7 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: rgb(41, 236, 243);
+    color: rgb(48, 252, 7);
 }
 
 .topo-do-site .txt-topo-site p{
@@ -171,7 +172,7 @@ section.habilidades .flex{
 
 .habilidades .habilidades-box i{
     font-size: 68px;
-    color: rgb(41, 236, 243);
+    color: rgb(48, 252, 7);
 }
 
 .habilidades .habilidades-box h3{
@@ -209,7 +210,7 @@ text-align: center;
 }
 
 .sobre .txt-sobre h2 span{
-    color: rgb(41, 236, 243);
+    color: rgb(48, 252, 7);
     display: block;
 }
 
@@ -223,7 +224,7 @@ text-align: center;
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: rgb(41, 236, 243);
+    background-color: rgb(48, 252, 7);
     font-size: 23px;
     margin: 20px 15px;
     cursor: pointer;
@@ -329,7 +330,7 @@ form .btn-enviar{
 
 form .btn-enviar input{
     width: 120px;
-    background-color: aqua;
+    background-color: rgb(48, 252, 7);
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -359,7 +360,7 @@ footer .line-footer{
     display: flex;
 }
 .borda{
-    border-top: 2px solid rgb(41, 236, 243);
+    border-top: 2px solid rgb(48, 252, 7);
 }
 
 footer .line-footer .logo-footer h2{
