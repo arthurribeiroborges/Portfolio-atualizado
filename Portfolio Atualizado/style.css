@@ -2,16 +2,16 @@
 
 ::-webkit-scrollbar{
     width: 10px;
-    background-color: #fff;
+    background-color: #000000;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(41, 236, 243);
+    background-color:  rgba(209, 67, 238, 0.637);
     
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(41, 236, 243);
+    background-color: rgb(0, 0, 0);
 }
 *{
     margin: 0;
@@ -26,8 +26,14 @@ html{
 }
 
 body{
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/portfolio\ 1.jpg);
     height: 100vh;
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa enquanto o conteúdo rola */
 }
 
 .interface{
@@ -43,7 +49,29 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 750;
-    background-color: rgb(41, 236, 243);
+    background-color: rgba(119, 46, 179, 0.63);
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contatoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* opcional: ajusta a altura para centralizar verticalmente */
+}
+
+.contatoo a {
+    text-decoration: none; /* opcional: remove a decoração de link */
+}
+
+.contatoo button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 750;
+    background-color: rgba(119, 46, 179, 0.63);
     border: 0;
     border-radius: 25px;
     cursor: pointer;
@@ -51,24 +79,25 @@ body{
 }
 
 h2.titulo{
-   color: #fff;
+   color: #000;
    font-size: 38px;
    text-align: center;
 }
 
 h2.titulo span{
-    color: rgb(41, 236, 243);
+    color: rgba(119, 46, 179, 0.63);
 }
 
 button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 8px rgb(43, 214, 226);
+    box-shadow: 0px 0px 20px  rgba(119, 46, 179, 0.63);
     transform: scale(1.1);
 
 }
 /*  Estilo do cabeçalho */
 .logo img{
-    border-radius: 350px;
-    width: 180px;
+    border-radius: 300px;
+    width: 160px;
+    box-shadow: 0px 0px 80px rgba(119, 46, 179, 0.63);
 }
 header{
     padding: 40px 4%;
@@ -81,15 +110,16 @@ header > .interface{
 }
 
 header a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
     display: inline-block;
     transition: .4s;
     font-weight: bold;
+    font-size: 18px;
 }
 
 header a:hover{
-    color: rgb(43, 214, 226);
+    color:  rgba(119, 46, 179, 0.63);
     transform: scale(1.2);
 }
 
@@ -101,7 +131,6 @@ header nav ul li{
     display: inline-block;
     padding: 0 40px;
 }
-
 
 
 /* ESTILO DO TOPO DO SITE */
@@ -116,40 +145,28 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-    color: #fff;
-    font-size: 42px;
+    color: #000;
+    font-size: 47px;
     line-height: 40px
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: rgb(41, 236, 243);
+    color:  rgba(119, 46, 179, 0.788);
 }
 
 .topo-do-site .txt-topo-site p{
-    color: #fff;
+    color: #000;
     margin: 40px 0;
     text-align: justify;
+    font-size: 18px;
 }
 
-.topo-do-site .img-topo-site img{
-    position: relative;
-    animation: flutuar 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes flutuar{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
-}
 
 /* ESTILO DAS HABILIDADES */
 
 section.habilidades{
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff0c;
+    box-shadow: 0 0 40px 8px #ffffff02;
 }
 
 section.habilidades .flex{
@@ -157,21 +174,21 @@ section.habilidades .flex{
 }
 
 .habilidades .habilidades-box{
-    color: #fff;
+    color: #000;
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
-    transition: .5s;
+    transition: .6s;
 }
 
 .habilidades .habilidades-box:hover{
-    transform: (scale(1.8));
-    box-shadow: 0 0 12px #ffffff5e;
+    transform: (scale(3));
+    box-shadow: 0 0 12px #000;
 }
 
 .habilidades .habilidades-box i{
     font-size: 68px;
-    color: rgb(41, 236, 243);
+    color: rgba(119, 46, 179, 0.788);
 }
 
 .habilidades .habilidades-box h3{
@@ -191,7 +208,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre{
-    color: #fff;
+    color: #000;;
 }
 
 .sobre .txt-sobre h2{
@@ -209,7 +226,7 @@ text-align: center;
 }
 
 .sobre .txt-sobre h2 span{
-    color: rgb(41, 236, 243);
+    color:rgba(119, 46, 179, 0.788);
     display: block;
 }
 
@@ -218,18 +235,34 @@ text-align: center;
     text-align: justify;
 }
 
+
+
 .btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: rgb(41, 236, 243);
+    background-color: rgba(119, 46, 179, 0.788);
     font-size: 23px;
     margin: 20px 15px;
     cursor: pointer;
     transition: .4s;
 }
 
+.sobre .img-sobre img{
+    position: relative;
+    animation: flutuar 1.4s ease-in-out infinite alternate;
+    border-radius: 14px;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
 /*ESTILO PORTFOLIO*/
 section.portfolio{
     padding: 80px 4%;
@@ -250,6 +283,7 @@ section.portfolio .flex{
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    box-shadow: 0px 0px 42px rgba(119, 46, 179, 0.788);
 }
 
 .img-port:hover{
@@ -287,7 +321,7 @@ section.formulario{
     max-width: 500px;
     margin: 0 auto;
     margin-top: 50px;
-    color: #fff;
+    color: #000;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -329,7 +363,7 @@ form .btn-enviar{
 
 form .btn-enviar input{
     width: 120px;
-    background-color: aqua;
+    background-color: rgba(119, 46, 179, 0.788);;
     color: #000;
     font-weight: 700;
     cursor: pointer;
@@ -337,7 +371,7 @@ form .btn-enviar input{
 }
 
 form .btn-enviar input:hover{
-    box-shadow: 0px 0px 10px #fff;
+    box-shadow: 0px 0px 10px #000;
 }
 
 /*FOOTER*/
@@ -353,17 +387,17 @@ footer .line-footer{
 }
 
 .btn-social h2{
-    color: #fff;
+    color: #000;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 .borda{
-    border-top: 2px solid rgb(41, 236, 243);
+    border-top: 2px solid rgba(119, 46, 179, 0.788);
 }
 
 footer .line-footer .logo-footer h2{
-    color: #fff;
+    color: #000;
    
 }
 
@@ -376,7 +410,7 @@ footer .flex{
 }
 
 footer .line-footer p {
-    color: #fff;
+    color: #000;
     font-size: 22px;
 }
 
