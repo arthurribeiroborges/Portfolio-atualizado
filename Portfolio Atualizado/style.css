@@ -1,17 +1,18 @@
 
 
+
 ::-webkit-scrollbar{
     width: 10px;
-    background-color: #000000;
+    background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color:  rgba(209, 67, 238, 0.637);
+    background-color:  blueviolet;
     
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: blueviolet;
 }
 *{
     margin: 0;
@@ -28,7 +29,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background-image: url(imagens/portfolio\ 1.jpg);
+    background-image: url(imagens/fundo3);
     height: 100vh;
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
@@ -49,11 +50,15 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 750;
-    background-color: rgba(119, 46, 179, 0.63);
+    background-color: blueviolet;
     border: 0;
     border-radius: 25px;
     cursor: pointer;
     transition: .4s;
+}
+
+.contato a button{
+    color: #fff;
 }
 
 .contatoo {
@@ -71,25 +76,29 @@ body{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 750;
-    background-color: rgba(119, 46, 179, 0.63);
+    background-color: blueviolet;
     border: 0;
     border-radius: 25px;
     cursor: pointer;
     transition: .4s;
 }
 
+.contatoo a button{
+    color: #fff;
+}
+
 h2.titulo{
-   color: #000;
+   color: #fff;
    font-size: 38px;
    text-align: center;
 }
 
 h2.titulo span{
-    color: rgba(119, 46, 179, 0.63);
+    color: #fff;
 }
 
 button:hover, form .btn-enviar input:hover{
-    box-shadow: 0px 0px 20px  rgba(119, 46, 179, 0.63);
+    box-shadow: 0px 0px 20px  blueviolet;
     transform: scale(1.1);
 
 }
@@ -97,10 +106,22 @@ button:hover, form .btn-enviar input:hover{
 .logo img{
     border-radius: 300px;
     width: 160px;
-    box-shadow: 0px 0px 80px rgba(119, 46, 179, 0.63);
+    box-shadow: 0px 0px 80px blueviolet;
 }
 header{
-    padding: 40px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333333af;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    z-index: 1000;
+}
+
+main{
+    margin-top: 250px;
 }
 
 header > .interface{
@@ -110,7 +131,7 @@ header > .interface{
 }
 
 header a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     display: inline-block;
     transition: .4s;
@@ -119,7 +140,7 @@ header a{
 }
 
 header a:hover{
-    color:  rgba(119, 46, 179, 0.63);
+    color:  #fff;
     transform: scale(1.2);
 }
 
@@ -145,17 +166,17 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-    color: #000;
+    color: #fff;
     font-size: 47px;
     line-height: 40px
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color:  rgba(119, 46, 179, 0.788);
+    color: blueviolet;
 }
 
 .topo-do-site .txt-topo-site p{
-    color: #000;
+    color: #fff;
     margin: 40px 0;
     text-align: justify;
     font-size: 18px;
@@ -174,7 +195,7 @@ section.habilidades .flex{
 }
 
 .habilidades .habilidades-box{
-    color: #000;
+    color: #fff;
     padding: 40px;
     border-radius: 20px;
     margin-top: 45px;
@@ -183,12 +204,12 @@ section.habilidades .flex{
 
 .habilidades .habilidades-box:hover{
     transform: (scale(3));
-    box-shadow: 0 0 12px #000;
+    box-shadow: 0 0 12px #ffffff6c;
 }
 
 .habilidades .habilidades-box i{
     font-size: 68px;
-    color: rgba(119, 46, 179, 0.788);
+    color: #333333da;
 }
 
 .habilidades .habilidades-box h3{
@@ -208,7 +229,7 @@ section.sobre .flex{
 }
 
 .sobre .txt-sobre{
-    color: #000;;
+    color: #fff;;
 }
 
 .sobre .txt-sobre h2{
@@ -226,7 +247,7 @@ text-align: center;
 }
 
 .sobre .txt-sobre h2 span{
-    color:rgba(119, 46, 179, 0.788);
+    color:blueviolet;
     display: block;
 }
 
@@ -242,7 +263,7 @@ text-align: center;
     height: 60px;
     border-radius: 50%;
     border: none;
-    background-color: rgba(119, 46, 179, 0.788);
+    background-color: blueviolet;
     font-size: 23px;
     margin: 20px 15px;
     cursor: pointer;
@@ -321,7 +342,7 @@ section.formulario{
     max-width: 500px;
     margin: 0 auto;
     margin-top: 50px;
-    color: #000;
+    color: #fff;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -363,8 +384,8 @@ form .btn-enviar{
 
 form .btn-enviar input{
     width: 120px;
-    background-color: rgba(119, 46, 179, 0.788);;
-    color: #000;
+    background-color: blueviolet;
+    color: #fff;
     font-weight: 700;
     cursor: pointer;
     transition: .5s;
@@ -387,17 +408,17 @@ footer .line-footer{
 }
 
 .btn-social h2{
-    color: #000;
+    color: #fff;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 .borda{
-    border-top: 2px solid rgba(119, 46, 179, 0.788);
+    border-top: 2px solid blueviolet;
 }
 
 footer .line-footer .logo-footer h2{
-    color: #000;
+    color: #fff;
    
 }
 
@@ -410,7 +431,7 @@ footer .flex{
 }
 
 footer .line-footer p {
-    color: #000;
+    color: #fff;
     font-size: 22px;
 }
 
